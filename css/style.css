@@ -14,22 +14,28 @@
     align-items: center ;
 }
 
-
-   
-
-
-.card-header img {
-    height: 200px;
-    width: auto;
-    border-radius:10px ;
+.card {
+    background:#ffff;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    padding: 10px;
 }
+   
+.card-header {
+    height: 200px;
+}
+.card-header > img {
+    width: 100%;
+}
+
 .content{
-    background-color: white;
+    
     padding-right: 5px;
     margin: 5px;
-    height: 30px;
-    width: 30;
+    
 }
 .content p {
     display: flex;
  }
+ .cart-header .content {padding-bottom:0 ;}
