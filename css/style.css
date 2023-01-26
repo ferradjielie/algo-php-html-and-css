@@ -1,0 +1,35 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#container { 
+    min-height: 100vh;
+    background:  rgba(68, 117, 136, 0.548);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+   
+
+
+.card-header img {
+    height: 200px;
+    width: auto;
+    border-radius:10px ;
+}
+.content{
+    background-color: white;
+    padding-right: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 30;
+}
+.content p {
+    display: flex;
+ }

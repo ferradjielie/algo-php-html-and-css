@@ -1,0 +1,3 @@
+        "Git Bash" : {
+            "path" : "C:\\laragon\\bin\\git\\git-bash.exe"
+        },
