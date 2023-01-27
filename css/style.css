@@ -38,7 +38,9 @@
 }
    
 .card-header {
-    height: 200px;
+    overflow: hidden;
+
+    height: 160px;
     
 }
 .card-header > img {
