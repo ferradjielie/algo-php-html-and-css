@@ -244,86 +244,85 @@ echo "<br>";
 echo "exercice 14";
 echo "<br>";
 
-$dateDeNaissance = new DateTime("1999-09-14");
-$today = new DateTime();
-$dateDiff = date_diff($dateDeNaissance, $today);
-echo 'votre âge est de ' . $dateDiff->format('%y ans %m mois %d jours') . "<br>";
+//$dateDeNaissance = new DateTime("1999-09-14");
+//$today = new DateTime();
+//$dateDiff = date_diff($dateDeNaissance, $today);
+//echo 'votre âge est de ' . $dateDiff->format('%y ans %m mois %d jours') . "<br>";
 
 
 
 
-$datenaissance = date_create("14-09-1999");
-$datetoday = date_create("now");
-$diff = date_diff($datenaissance, $datetoday);
+$datebird = date_create("14-09-1999");
+$datetooday = date_create("now"); $diff = date_diff($datebird, $datetooday);
 echo 'votre âge est de ' . $diff->format('%y') . "<br>";
 
 
 // class Personne
-// {
-//     private string $_nom; // $_nom est equivalent à une variable et nom est equivaut à sa valeur
-//     private string $_prenom;
-//     private string $_ville;
+ //{
+    /* private string $_nom; // $_nom est equivalent à une variable et nom est equivaut à sa valeur
+     private string $_prenom;
+     private string $_ville;
 
-//     public function __construct(string $nom, string $prenom, string $ville)
-//     {
-//         $this->_nom = $nom;
-//         $this->_prenom = $prenom;
-//         $this->_ville = $ville;
-//     }
+    public function __construct(string $nom, string $prenom, string $ville)
+     {
+         $this->_nom = $nom;
+        $this->_prenom = $prenom;
+        $this->_ville = $ville;
+     }
 
-//     // getters (accesseurs)
-//     public function getNom()
-//     {
-//         return $this->_nom;
-//     }
+    // getters (accesseurs)
+     public function getNom()
+     {
+        return $this->_nom;
+     }
 
-//     public function getPrenom()
-//     {
-//         return $this->_prenom;
-//     }
+     public function getPrenom()
+     {         return $this->_prenom;
+     }
 
-//     public function getVille()
-//     {
-//         return $this->_ville . "<br>";
-//     }
+     public function getVille()
+    {
+         return $this->_ville . "<br>";
+    }
 
-//     // setters (mutateurs)
-//     public function setNom($nouveauNom)
-//     {
-//         $this->_nom = $nouveauNom;
-//     }
-//     public function setPrenom($nouveauPrenom)
-//     {
-//         $this->_prenom = $nouveauPrenom;
-//     }
+     // setters (mutateurs)
+    public function setNom($nouveauNom)
+     {
+         $this->_nom = $nouveauNom;
+     }
+     public function setPrenom($nouveauPrenom)
+    {
+         $this->_prenom = $nouveauPrenom;
+    }
 
-//     public function setVille($nouvelleVille)
-//     {
-//         $this->_ville = $nouvelleVille;
-//     }
+    public function setVille($nouvelleVille)
+     {
+         $this->_ville = $nouvelleVille;
+    }
 
-//     public function __toString()
-//     {
-//         return $this->_prenom . " " . $this->_nom . " habite à " . $this->_ville . "<br>";
-//     }
-// } // fin classe Personne
+     public function __toString()
+    {
+         return $this->_prenom . " " . $this->_nom . " habite à " . $this->_ville . "<br>";
+     }
+ } // fin classe Personne
 
-// $p1 = new Personne("FERRADJI", "Elie", "STRASBOURG");
-// $p2 = new Personne("MURMANN", "Mickael", "STRASBOURG");
-// $p3 = new Personne("DUPONT", "Marie", "PARIS");
+ $p1 = new Personne("FERRADJI", "Elie", "STRASBOURG");
+ $p2 = new Personne("MURMANN", "Mickael", "STRASBOURG");
+ $p3 = new Personne("DUPONT", "Marie", "PARIS");
+ */
 
 // // avant mariage
-// echo $p3;
+ //echo $p3;
 // $p3->setNom("SCHMITT");
 // $p3->setVille("STRASBOURG");
-// // après mariage
-// echo $p3;
+//après mariage
+ //echo $p3;
 
 // echo '<br>';
 // echo '<br>';
 // echo '<br>';
 
-class Sandwitch
+/*class sandwitch
 {
 
     private string $_sand;
@@ -350,7 +349,7 @@ class Sandwitch
     }
     public function __toString()
     {
-        return $this->_sand . " sauce " . $this->_sauce . " " . $this->_crudité;
+        return $this->_sand . " sauce " . $this->_sauce . " " . $this->_crudité
     }
 }
 
@@ -358,35 +357,75 @@ $s1 = new Sandwitch('Sandwitch', 'mayonnaise', 'poivron');
 $s2 = new Sandwitch('Sandwitch', 'moutarde', 'carotte');
 $s1;
 "<br>";
-$s2;
+$s2; */
+echo "<br>";
+echo "<br>";
+echo "exercice 15" ;
+echo "<br>";
+echo "<br>";
 
 
-class Personne
-{
-    private  $nom;
-    private  $prenom;
-    private  $dateNaissance;
-    private  $age;
+class Personne 
+{ 
+    private string $_nom;
+    private string $_prenom;
+    private string $_datenaissance;
 
-    public function __construct($nom,  $prenom, $dateNaissance)
+    public function __construct( string $nom, string $prenom, string $datenaissance)
     {
-        $this->nom = $nom;
-        $this->prenom = $prenom;
-        $this->dateNaissance = $dateNaissance;
+        $this -> _nom = $nom;
+        $this -> _prenom = $prenom;
+        $this -> _datenaissance = $datenaissance;
     }
-   
-
-
-    public function calcAge(){
-        echo 'test';
-
-        return ;
+    
+    // accesseurs (getters)
+    public function getNom () { 
+        return $this -> _nom;
     }
+
+    public function getPrenom ()
+    { 
+        return $this -> _prenom;
+    }
+
+    public function getDateNaissance () { 
+        return $this -> _datenaissance; 
+    }
+    
+    public function getAge ( ) {  
+        $datedenaissance = date_create ($this -> _datenaissance); // logique très importante a comprendre !!!!
+        $datetoday= date_create ( "now") ;
+        $datediff = date_diff ( $datedenaissance, $datetoday);
+
+        return $datediff->format("%Y ans");
+
+    } 
+    // ON UTILISE LE $this uniquement pour les  premiers elements du private string ---> $_nom etc
+
+
+
+    // setters 
+
     public function __toString()
-    {
+    { 
+        return $this-> _nom . " ". $this -> _prenom. " a ".$this-> getAge ();
     }
 }
-$p1 = new Personne("DUPONT", "Michel", "1980-02-19");
+$p1=  new Personne ( "DUPONT", "Michel", "1980-02-19"); 
+$p2 = new Personne ("DUCHEMIN", "Alice", "1985-01-17");
+echo $p1 ; 
+echo "<br>";
+echo $p2 ;
 
-$p2 = new Personne("DUPONT", "MArie", "1980-02-19");
-echo $p1;
+
+
+
+
+
+
+
+
+
+
+
+?>
