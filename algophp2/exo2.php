@@ -13,6 +13,10 @@ echo "<table>
             <td>Allemange</td>
             <td>Berlin</td>
         </tr>
+        <tr>
+        <td> France </td>
+        <td> Paris </td>
+        </tr>
     </table>";
 
 
