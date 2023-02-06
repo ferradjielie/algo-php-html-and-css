@@ -41,16 +41,16 @@ $capitales = [
     "Italie" => "Rome"  
 ];
 
-$capitales2 = [
+/*$capitales2 = [
     "Belgique" => "Bruxelles",
     "Japon" => "Tokyo",  
-];
+]; */
 
 afficherTableHTML($capitales);
-afficherTableHTML($capitales2);
+//afficherTableHTML($capitales2);
 
 function afficherTableHTML($capitales) {
-    krsort($capitales);
+    ksort($capitales);
     echo "<table>
     <thead>
     <tr> 
@@ -62,13 +62,15 @@ function afficherTableHTML($capitales) {
     
     foreach($capitales as $pays => $capitale) {
         echo "<tr>
-            <td>".mb_strtoupper($pays)."</td>
+            <td>".strtoupper($pays)."</td>
             <td>".$capitale."</td>
         </tr>";
     }
     
-    echo "</tbody></table>";
+   
+ echo "</tbody></table>";
 }
+
 
 
 
