@@ -34,7 +34,7 @@ function repeterImage($url, int $nbrepetition){
 }
 
 
-echo repeterImage("http://my.mobirise.com/data/userpic/764.jpg", 100);
+echo repeterImage("http://my.mobirise.com/data/userpic/764.jpg", 10);
 
 
 

@@ -17,6 +17,10 @@
     <input type="text" name="Ville" id="Ville">
 </form>
 
+<form action="plop">
+  
+</form>
+
 <?php
 
 $nomsInput = [ "Nom",
