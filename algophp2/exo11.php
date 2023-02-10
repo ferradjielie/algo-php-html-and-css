@@ -19,7 +19,7 @@ $date = new IntlDateFormatter(
 echo $date-> format (time());
 
 }
-formaterDateFr($date);
+formaterDateFr($date); // test
 
 
 
