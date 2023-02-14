@@ -52,7 +52,7 @@ class Voiture {
     public function demarrer () {
         
         $this -> _demarrer = true;
-        echo "Le véhicule $this démarre";
+        echo "Le véhicule $this démarre<br>" ;
     
     }
 
@@ -95,54 +95,51 @@ class Voiture {
     }
 
    
-    public function affichage () {
+    public function affichage () { 
 
-      return  $this-> _marque. $this -> _modele. $this -> _nbPortes;
+        echo  " ********************************<br>Le modèle de ce véhicule est : " .$this->  _marque. " ". $this -> _modele. "<br>". "Nombre de portes:". " ".
+         $this -> _nbPortes. "<br>". $this ->  getEtat() . "Sa vitesse actuelle est de". " ".$this-> getVitesseActuelle(). "km/h"." ********************************<br>"   ;
 
 
-}
+ }
+
+    public function getEtat(){
+        if ($this->getDemarrer()){
+            return   "Le véhicule ". $this-> _marque ." est démarré<br>" ;
+        }
+        else{
+        return  "le véhicule ". $this-> _marque ." est à l'arrêt";
+        }
+    }
+    
+    public function getAccelerer () {
+        if ($this-> getDemarrer()) {
+            return  $this-> accelerer (50) ;
+        }
+    }
 }
 
 $v1 = new Voiture("Peugeot","408",5);
 
 $v1->demarrer();
+
+
+
 echo "<br>" ;
 $v1->accelerer(50);
 
 echo "<br>" ;
-$v1->ralentir (30);
+//$v1->ralentir (30);
+//echo $v1->getVitesseActuelle();
+$v1 -> affichage ();
 
 
-echo "<br>" ;
-$v1 -> stopper ();   
+// echo "<br>" ;
+// $v1 -> stopper ();   
 
-echo "<br>" ; 
-echo $v1;
-
-$v1->affichage();
-
-$v2->affichage(); 
-// rurutrutrturtu fdhytret(t)ù
+// echo "<br>" ; 
+// echo $v1;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
+//$v2->affichage(); $v1->affichage();rfefeffe
